@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.games.sm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="in.games.sm.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/jannat_matka_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/jannat_matka_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="in.games.sm.Withdraw_history"></activity>
+        <activity android:name="in.games.sm.MainActivity" />
+        <activity android:name="in.games.sm.Starline_Activity" />
+        <activity android:name="in.games.sm.TransactionHistory" />
+        <activity android:name="in.games.sm.Fund_RequestActivity" />
+        <activity android:name="in.games.sm.FundsActivity" />
+        <activity android:name="in.games.sm.HistoryActivity" />
+        <activity android:name="in.games.sm.BidActivity" />
+        <activity android:name="in.games.sm.WithdrawalActivity" />
+        <activity android:name="in.games.sm.RequestActivity" />
+        <activity
+            android:name="in.games.sm.SpMotorActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity
+            android:name="in.games.sm.OddEvenActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity
+            android:name="in.games.sm.GroupJodiActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity
+            android:name="in.games.sm.JodiDigitActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity
+            android:name="in.games.sm.GroupPanelActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity
+            android:name="in.games.sm.TriplePanaActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity
+            android:name="in.games.sm.DoublePanaActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity
+            android:name="in.games.sm.FullSangamActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity
+            android:name="in.games.sm.HalfSangamActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity
+            android:name="in.games.sm.RedBracketsActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity
+            android:name="in.games.sm.DPMotorActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity
+            android:name="in.games.sm.SinglePannaActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity android:name="in.games.sm.RegisterActivity" />
+        <activity
+            android:name="in.games.sm.SingleDigitActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize|adjustPan" />
+        <activity android:name="in.games.sm.LoginWithMpinActivity" />
+        <activity android:name="in.games.sm.DrawerNoticeBoardActivity" />
+        <activity android:name="in.games.sm.DrawerGameRates" />
+        <activity android:name="in.games.sm.DrawerHowToPlayActivity" />
+        <activity android:name="in.games.sm.DrawerGenMpinActivity" />
+        <activity android:name="in.games.sm.DrawerProfileActivity" />
+        <activity android:name="in.games.sm.NotificationActivity" />
+        <activity android:name="in.games.sm.DoubleDigitActivity" />
+        <activity android:name="in.games.sm.PlayGameActivity" />
+        <activity
+            android:name="in.games.sm.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="in.games.sm.GameActivity" />
+        <activity android:name="in.games.sm.splash_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="in.games.sm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="in.games.sm.NetworkStateChangeReciever"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
