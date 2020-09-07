@@ -44,6 +44,4 @@ public static final String Url_notification="https://malamaal.anshuwap.com/restA
 public static final String Url_transaction_history="https://malamaal.anshuwap.com/restApi/Transaction/transaction.php";
 public static final String Url_forgot_mpin="https://malamaal.anshuwap.com/restApi/forgotmpin.php";
 
-
-
 }
